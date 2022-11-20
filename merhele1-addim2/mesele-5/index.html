@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Registiration</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- 
+        Qrafik pəncərəsi olan proqram yazmaq lazımdır!
+        Proqram tələbə qeydiyyatı etmək üçündür.
+        Proqramın pəncərəsi açıldığı zaman, istifadəçi tələbənin adını, soyadını, təvəllüdünü
+        yaza bilməlidir və qeydiyyat düyməsinə basdığı zaman, daxil etdiyi məlumatlar qeydiyyat
+        olunmalı və cədvəldə bütün qeydiyyat olunan tələbələrin siyahısı görünməlidir. 
+    -->
+
+    <header class="m-3">
+      <h1>Tələbə Qeydiyyatı</h1>
+    </header>
+
+    <main>
+      <div class="container shadow mb-5 bg-body rounded">
+        <form class="p-3" id="form">
+          <div class="p-2">
+            <label for="name" class="form-label">Tələbənin adı</label>
+            <input
+              class="form-control"
+              id="name"
+              type="text"
+              placeholder="Ad..."
+              required
+            />
+          </div>
+
+          <div class="p-2">
+            <label for="surname" class="form-label">Tələbənin soyadı</label>
+            <input
+              class="form-control"
+              id="surname"
+              type="text"
+              placeholder="Soyad..."
+              required
+            />
+          </div>
+
+          <div class="p-2">
+            <label for="birth" class="form-label">Tələbənin təvəllüdü</label>
+            <input class="form-control" id="birth" type="date" required />
+          </div>
+
+          <button class="submitBtn btn btn-primary m-2" type="submit">
+            Daxil et
+          </button>
+        </form>
+      </div>
+
+      <div class="container">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th scope="col">Ad</th>
+              <th scope="col">Soyad</th>
+              <th scope="col">Təvəllüd</th>
+            </tr>
+          </thead>
+          <tbody class="table-body"></tbody>
+        </table>
+      </div>
+    </main>
+
+    <script src="index.js"></script>
+  </body>
+</html>
